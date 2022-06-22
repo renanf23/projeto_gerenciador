@@ -9,7 +9,7 @@ function ProjectForm({btnText}){
     const[categories, setCategories] = useState([])
 
     useEffect(() => {
-        fetch("http://localhost:5000/categories", {
+        fetch("https://costs-backend-renan.herokuapp.com/categories", {
             method:"GET",
             headers: {
                 'Content-Type': 'application/json'
